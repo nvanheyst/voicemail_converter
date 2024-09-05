@@ -1,15 +1,4 @@
-# voicemail_converter
+# sample files
 Trancribes .wav files to .txt
 
-# Required Libraries:
-
-**pydub:**
-pip install pydub
-
-**ffmpeg (or avconv):**
-download and install ffmpeg: https://ffmpeg.org/download.html
-add the bin file to PATH
-
-# Background
-
-# Future additions
+Here is an example input .wav file and a transcribed output to a .txt file.
