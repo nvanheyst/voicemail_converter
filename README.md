@@ -3,10 +3,10 @@ Trancribes .wav files to .txt
 
 # Required Libraries:
 
-**pydub**
+**pydub:**
 pip install pydub
 
-**ffmpeg (or avconv)**
+**ffmpeg (or avconv):**
 download and install ffmpeg: https://ffmpeg.org/download.html
 add the bin file to PATH
 
