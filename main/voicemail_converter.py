@@ -1,19 +1,9 @@
-# Explanation:
-# Pydub: We use pydub to load the file and convert it to a more compatible format if it's in a non-PCM encoding (like format 49).
-# Format Conversion: The audio is converted to 16kHz, mono, which is optimal for speech recognition.
-# Required Libraries:
-# Install pydub:
-# pip install pydub
-# If you haven’t installed ffmpeg (or avconv), you can download it or use a similar tool to ensure pydub can decode the non-PCM audio:
-
-# ffmpeg: Download and install ffmpeg (then add to path)
-# Once pydub and ffmpeg (or another backend) are properly set up, this program should be able to handle non-PCM audio formats and transcribe them.
-
-
-
 from pydub import AudioSegment
 import speech_recognition as sr
 import os
+
+# Replace this with the path to your WAV audio file
+input_audio_file = R"C:\Users\nvheyst\Downloads\msg1626.WAV"
 
 def convert_audio(input_file, output_file):
     try:
@@ -62,10 +52,6 @@ def main(input_audio_file):
         
         if transcription:
             save_transcription_to_file(transcription, input_audio_file)
-
-
-# Replace this with the path to your WAV audio file
-input_audio_file = R"C:\Users\nvheyst\Downloads\msg1626.WAV"  # Change this to your actual file path
 
 
 if __name__ == "__main__":
